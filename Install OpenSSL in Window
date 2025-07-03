@@ -1,0 +1,27 @@
+//Use Chocolatey (Safe Windows Package Manager)
+///Works in: Windows Command Prompt or PowerShell
+----------------------------------------------------
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; `
+[System.Net.ServicePointManager]::SecurityProtocol = `
+[System.Net.ServicePointManager]::SecurityProtocol -bor 3072; `
+iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+------------------------------------------------------
+
+1.   choco install openssl
+
+
+2.   choco install openssl.light  /// is the smaller, stable version recommended for most users.
+
+
+Answer A to agree to run the script
+
+
+openssl version
+
+If openssl version is not working, restart the computer and try again should be work!
+
+
+
+
